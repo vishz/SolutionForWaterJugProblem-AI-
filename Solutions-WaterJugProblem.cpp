@@ -121,7 +121,7 @@ int main()
 	    		basicQueue.push(temp);
 	    	}
 	    	
-	    	//Pour from 2nd jug to 1st until its full
+	    	//Pour all water from 2nd to 1st 
 	    	if(jug.pairStates.second>0 && (jug.pairStates.first+jug.pairStates.second)<=capacity.pairStates.first){
 	    		temp.pairStates = make_pair(jug.pairStates.first+jug.pairStates.second,0);
 	    		temp.stringPairStates = jug.stringPairStates + makestring(temp.pairStates.first,temp.pairStates.second);
